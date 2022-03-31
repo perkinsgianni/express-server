@@ -16,7 +16,7 @@ app.use(morgan('dev'))
 // middleware that only parses json
 app.use(bodyParser.json());
 
-// server should respond to GET requests to / route
+// server should respond to GET requests to / route with a 200 response code
 app.get('/', (req, res) => {
     res.send("It's working")
   });
