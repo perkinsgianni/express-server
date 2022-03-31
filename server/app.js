@@ -18,13 +18,12 @@ app.use(bodyParser.json());
 
 // server should respond to GET requests to / route
 app.get('/', (req, res) => {
-    // server should respond with a status code of 200
-    res.status(200).send("It's working")
+    res.send("It's working")
   });
 
 // server should respond to GET requests to data/ route with the top spots data
 app.get('/data', (req, res) => {
-    res.status(200).send(jsonData)
+    res.send(jsonData)
   });
 
 // finally export the express application
